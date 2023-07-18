@@ -42,7 +42,7 @@ const AddProduct = () => {
       axios.post("http://localhost:9000/api/create/products", { name, description, price, quantity, imageURL })
         .then((response) => {
           swal(response.data.msg === "You have registered your product" ? "Successfully posted product" : "Error posting your product", response.data.msg, response.data.msg === "You have registered your product" ? "success" : "error")
-          
+
           if (response.data.msg === "You have registered your product") {
             navigate("/sellerdashboard")
           }
