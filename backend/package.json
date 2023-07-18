@@ -15,7 +15,8 @@
   "main": "serverOne.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm i"
+    "build": "npm build",
+    "dev" : "nodemon serverOne.js"
   },
   "author": "",
   "license": "ISC",
