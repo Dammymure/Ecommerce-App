@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGO_URI)
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 // Cors middleware
-app.use(cors({ origin: true }))
+app.use(cors({ origin: [ true,"https://lively-clafoutis-f4d3af.netlify.app/"] }))
 // middlewae for post http model
 app.use(express.json())
 // middlewae for user router
