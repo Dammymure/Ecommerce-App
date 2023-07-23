@@ -6,6 +6,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.1.3",
     "express": "^4.18.2",
+    "mongodb": "^5.7.0",
     "mongoose": "^7.2.2",
     "nodemon": "^2.0.22",
     "sweetalert": "^2.1.2"
@@ -16,7 +17,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm i",
-    "dev" : "nodemon serverOne.js"
+    "dev": "nodemon serverOne.js"
   },
   "author": "",
   "license": "ISC",
