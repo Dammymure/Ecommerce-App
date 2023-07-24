@@ -45,18 +45,18 @@ const NavbarGeneral = () => {
                 <div class="container-fluid">
                     <a class="navbar-brand mt-2 mt-lg-0" >
                         <img
-                            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                            src=""
                             height="15"
-                            alt="MDB Logo"
+                            alt="Logo"
                             loading="lazy"
                         />
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                        
-                        <div class="collapse navbar-collapse" id="navbarScroll">
-                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                             <li class="nav-item">
                                 <Link to="/registeruser" className="nav-link active" aria-current="page" >SignUp</Link>
                             </li>
@@ -70,8 +70,8 @@ const NavbarGeneral = () => {
                                 <Link to="/loginseller" className="nav-link active" aria-current="page" >Login Seller</Link>
                             </li>
                         </ul>
-                        </div>
-                    
+                    </div>
+
 
                     <div class="d-flex align-items-center">
                         <a class="text-reset me-3" >

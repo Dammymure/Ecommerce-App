@@ -2,18 +2,40 @@
   "version": 2,
   "builds": [
     {
-      "src": "./backend/serverOne.js", 
+      "src": "./backend/index.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "./frontend/myecommerce-app/build", 
-      "use": "@vercel/static"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/backend/serverOne.js"
+      "src": "/api/products",
+      "dest": "ProductRoute.js"
+    },
+    {
+      "src": "/api/create/products",
+      "dest": "ProductRoute.js"
+    },
+    {
+      "src": "/api/seller",
+      "dest": "SellerRoute.js"
+    },
+    {
+      "src": "/api/create/newseller",
+      "dest": "SellerRoute.js"
+    },
+    {
+      "src": "/api/users",
+      "dest": "UserRoute.js"
+    },
+    {
+      "src": "/api/create/user",
+      "dest": "UserRoute.js"
     }
-  ]
+  ],
+  "env": {
+    "MONGO_URI" : "mongodb+srv://dammymure:dammymure100@reactecommerce.devk9tw.mongodb.net/?retryWrites=true&w=majority",
+    "ENVIRONMENT": "production"
+
+  }
 }
+
